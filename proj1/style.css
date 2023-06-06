@@ -1,0 +1,379 @@
+/* general styles
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "lato",sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background: url(images/proj1.jpg) no-repeat center center/ cover;
+    
+}
+
+.container{
+    width:550px;
+    height: 450px;
+}
+
+.header{
+    font-size: 1.2rem;
+    border: solid 2px white;
+    margin: 20px auto;
+    width: 80%;
+    background-color: rgb(31, 29, 29);
+    color: white;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    border-radius: 12px;
+}
+
+.main-content{
+    width: 100%;
+    height: 315px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 50px 40px;
+    box-shadow: 0 0 10px;
+
+}
+
+.main-content .text-area::before{
+    content:open-quote;
+}
+.main-content .text-area::after{
+    content:close-quote;
+}
+
+.main-content .text-area{
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.main-content .author{
+    font-size: 1.6rem;
+    color: red;
+    text-transform: uppercase;
+    margin-top:20px ;
+}
+
+.button-area button{
+    background-color: rgb(33, 30, 30);
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 10px 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.button-area button:active{
+    background-color: lightblue;
+} */
+/* css for second project */
+/* body{
+    background:url(images/proj2.jpg) no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+}
+
+#open-btn{
+    padding-bottom: 20px;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    width: 350px;
+    height: 96px;
+    font-size: 1.8rem;
+    background: transparent;
+    border: solid 2px #ffff;
+    border-radius: 10px;
+    color: #ffff;
+    padding: 5px;
+    box-shadow: 0 0 3px black;
+    transition: .5s;
+}
+#open-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+
+#modal{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 200px;
+    height: 100px;
+    padding: 20px 10px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    animation-name: animatemodal;
+    animation-duration: .4s;
+}
+
+#close-btn{
+    font-size: 3rem;
+}
+
+#close-btn{
+    cursor: pointer;
+    font-size: 3rem;
+    color: rgb(255, 0, 0);
+}
+
+#modal-container{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: (0,0,0,0.5);
+}
+
+/* modal animation */
+
+/* @keyframes animatemodal{
+    from{
+        top: -300px;
+        opacity: 0;
+    }
+    to{
+        top: 50%;
+        opacity: 1;
+    }
+}  */
+/* css end for second project */
+/* accordian 3rd project styling */
+/* body{
+    background: url(images/proj3.jpg) no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordian{
+    width: 70%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+.accordian .accordian-title{
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.accordian .content-container .question{
+    padding: 18px 0px;
+    font-size: 22px;
+    cursor: pointer;
+    border-bottom: 2px solid black;
+    position: relative;
+}
+.accordian .content-container .question::after{
+    content: '+';
+    position: absolute;
+    right: -5px;
+    color: rgb(4, 0, 0);
+}
+
+.accordian .content-container .answer{
+    padding-top: 15px;
+    font-size: 22px;
+    line-height: 1.5;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    transform: .5s;
+}
+
+.accordian .content-container.active .answer{
+    height: 150px;
+}
+
+.accordian .content-container .question{
+    font-size: 18px;
+    transition: .5s;
+}
+
+.accordian .content-container.active  .question::after{
+    content: '-';
+    font-size: 30px;
+    transition: .5s;
+} */
+/* end of accordian */
+/* start of stopwatch */
+/* body{
+    background: url(images/proj4.jpg) no-repeat center center/ cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 30%;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 3px;
+    margin-right: 190vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#timer{
+    width: 100%;
+    font-size: 72px;
+    text-align: center;
+    margin: 0px auto;
+    padding: 35px;
+}
+
+.buttons{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+button{
+    margin: 0 10px;
+    border: none;
+    color: white;
+    width: 50px;
+}
+
+button i{
+    font-size: 2rem;
+    padding: 10px;
+    color: white;
+}
+
+#play{
+    background-color: red;
+}
+#pause{
+    background-color: orange;
+}
+#reset{
+    background-color: green;
+} */
+
+/* task list css */
+
+body{
+    height: 100vh;
+    background: url(images/proj5.jpg) no-repeat center center/ cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-task-container{
+    width: 350px;
+    padding: 20px 10px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 0 3px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input{
+    flex: 5;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+#add-task{
+    flex: 1;
+    transition: .3s;
+    font-size: 1.2rem;
+    padding: 5px;
+    background-color: white;
+    color: green;
+    border: green solid 2px;
+    border-radius: 10px;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+#add-task:hover{
+    background-color: green;
+    color: white;
+
+}
+
+/* styling for task which get added to to do list */
+
+.task{
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 3px;
+    padding: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.task li{
+    list-style: none;
+    flex: 4;
+    padding: 5px;
+    font-size: 1.3rem;
+    margin: 10px;
+}
+
+.task button{
+    flex: 1;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;   
+}
+
+.task .checkTask{
+    color: orange;
+    margin-right: 5px;
+    border: solid 2px orange;
+    font-size: 1.5rem;
+}
+
+.task .checkTask:hover{
+    background-color: orange;
+    color: white;
+}
+
+.task .deleteTask{
+    color: red;
+    border: solid 2px red;
+    font-size: 1.3rem;
+
+}
+.task .deleteTask:hover{
+    background-color: red;
+    color: white;
+}
